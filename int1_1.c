@@ -37,12 +37,12 @@ int main()
     printf("\nProcess|   BT  |  CT    |   WT   |   TAT  |\n"); 
     printf("-----------------------------------------------------\n"); 
     for(i=1;i<=n;i++) {
-        ct = ct + b[i]; 
+        ct += b[i]; 
         tat = ct;   // or tat = tat + b[i]; 
         wt = tat - b[i]; 
         printf("P%d    |   %d   |   %d     |   %d   |  %d   |\n",i,b[i],ct,wt,tat); 
-        temp = temp + wt; 
-        temp1 = temp1 + tat; 
+        temp += wt; 
+        temp1 += tat; 
     } 
     printf("-----------------------------------------------------\n"); 
     awt = (float)temp/n; 

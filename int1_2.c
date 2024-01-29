@@ -26,7 +26,7 @@ int main()
         pos=i;         
         for(j=i+1;j<n;j++) {             
             if(bt[j]<bt[pos])                 
-            pos=j;        
+                pos=j;        
         } 
         // BurstTime moving one position to another position 
         temp=bt[i];     
